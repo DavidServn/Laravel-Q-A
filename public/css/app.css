@@ -1,0 +1,58 @@
+body {
+  font-size: 2rem;
+  text-align: justify; }
+
+ul, p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+li {
+  margin-bottom: 20px; }
+
+.header {
+  background: #251ca5;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: fixed; }
+
+.footer {
+  background: #251ca5;
+  position: fixed; }
+
+.btn-primary {
+  background: #251ca5; }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px; }
+
+.container-with-banner {
+  margin-top: 150px;
+  margin-bottom: 50px; }
+
+.name {
+  font-weight: bold; }
+
+.room {
+  font-size: 2rem;
+  text-align: left; }
+
+.room-name {
+  font-size: 1.2em;
+  color: white; }
+
+.logout {
+  margin-bottom: 0; }
+
+.logout a {
+  color: white; }
+
+.logout a:hover {
+  color: white;
+  background-color: #251ca5 !important; }
+
+/*# sourceMappingURL=app.css.map */
