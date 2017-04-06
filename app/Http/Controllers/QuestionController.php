@@ -40,9 +40,12 @@ class QuestionController extends Controller
 			return redirect()->back()
 				->with('mobile_message', 'success')
 				->with('mobile-name', $name)
-				->with('mobile-romm', $roomId);
+				->with('mobile-room', $roomId);
 		} else {
-			return redirect()->back()->with('mobile_message', 'error');
+			return redirect()->back()->with('mobile_message', 'error')
+				->with('mobile-name', $name)
+				->with('mobile-question', $question)
+				->with('mobile-room', $roomId);
 		}
 	}
 }

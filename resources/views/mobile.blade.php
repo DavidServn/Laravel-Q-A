@@ -29,7 +29,11 @@
                 </div>
 				<div class="form-group">
                     <label for="question">{{ trans('mobile.question') }}</label>
-                    <input class="form-control" type="text" name="question" id="question" value="">
+					@if(Session::get('mobile-question') != null)
+	                    <input class="form-control" type="text" name="question" id="question" value="{{ Session::get('mobile-question') }}">
+					@else
+    	                <input class="form-control" type="text" name="question" id="question" value="">
+					@endif
                 </div>
 				<div class="form-group">
                     <label for="room">{{ trans('mobile.room') }}</label>				
